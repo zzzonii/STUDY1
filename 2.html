@@ -3,15 +3,29 @@
 <head>
   <title>WEB1 - CSS</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <h2>CSS란 무엇인가?</h2>
-  <p>종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로, HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.</p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>CSS란 무엇인가?</h2>
+      <p>종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다. 언어가 실제 표시되는 방법을 기술하는 언어로, HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.<br>
+      CSS 선택자 속성 = property / ex. css text size property, css text center property<br>
+      이미 클릭된 링크 색을 바꾸고싶다. a href 뒤에 class="saw" 삽입. 스타일에 .saw = 모든 클래스가 saw인 태그를 가리키는 선택자가 됨. class는 그루핑의 뜻. <br>
+      우선순위 a 태그 선택자 < .saw 클래스 선택자 < #active 아이디 선택자. <br>
+      아이디값은 중복불가. css selector로 검색.박스모델. box model. 코드 무시하라고 하는것은 < ! - - 블라 블라 - - ></p>
+      <p>의미 없는 태그를 사용할때 div 태그 사용. div는 block level element임. 똑같은 태그 span. span은 inline element.
+      </p>
+      <p>
+      화면 크기에 따라서 선을 없애고 글 위치를 바꾸는 미디어쿼리. 반응형 디자인을 위한 미디어 쿼리.
+      </p>
+    </div>
+  </div>
 </body>
 </html>
